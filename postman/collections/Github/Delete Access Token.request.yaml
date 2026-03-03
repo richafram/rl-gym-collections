@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8012/api/users/1/access-tokens/16
+method: DELETE
+headers:
+  x-database-id: db_1760704737022_rlbdpx82b
+order: 21000

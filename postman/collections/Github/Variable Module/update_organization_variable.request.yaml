@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8012/orgs/github/actions/variables/ORG_SECRET
+method: PATCH
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: json
+  content: |-
+    {
+      "name":"ORG_SECRET",
+      "value": "Another New value for github",
+      "visibility": null,
+      "selected_repository_ids": null
+    }
+order: 12000

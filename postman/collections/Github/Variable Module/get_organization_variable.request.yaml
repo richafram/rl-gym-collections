@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8012/orgs/github/actions/variables/
+method: GET
+headers:
+  Authorization: Bearer auth_bypass
+order: 11000

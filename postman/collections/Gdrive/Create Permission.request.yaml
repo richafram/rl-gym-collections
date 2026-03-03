@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8007/api/v1/files/01JBQM3K8TGHZX9RNVQM5Y2P8U/permissions
+method: GET
+headers:
+  x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMUpCUU0zSzhUR0haWDlSTlZRTTVZMlA3VyIsImVtYWlsIjoiam9obi5zbWl0aEBjb21wYW55LmNvbSIsIm5hbWUiOiJKb2huIFNtaXRoIiwiaWF0IjoxNzA1MzI0NjAwLCJleHAiOjE3MzY4NjA2MDB9.8K2vQx9mN7pL3sR6tY1uI4oP5aE8wC2bV9nM6xZ3kS
+  x-database-id: db_1769686903512_dkg8dxsj0
+body:
+  type: json
+  content: |-
+    {
+      "role": "reader",
+      "type": "user",
+      "emailAddress": "john.smith@company.com"
+    }
+order: 3000

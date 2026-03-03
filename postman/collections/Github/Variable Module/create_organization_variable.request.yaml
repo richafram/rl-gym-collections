@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8012/orgs/github/actions/variables
+method: POST
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: json
+  content: |-
+    {
+      "name": "some another name",
+      "value": "some another value",
+      "visibility": "all",
+      "selected_repository_ids": [2,2,1]
+    }
+order: 10000

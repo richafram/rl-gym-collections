@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8012/repos/github/docs/environments/somename/variables/somevalue
+method: PATCH
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: json
+  content: |-
+    {
+        "name":"",
+        "value":"another val"
+    }
+order: 8000

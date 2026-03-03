@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:8004/mcp
+method: POST
+headers:
+  x-database-id: "{{email_db}}"
+  Authorization: "{{email_auth}}"
+body:
+  type: json
+  content: >-
+    {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+            "name": "watch_user_mailbox",
+            "arguments": {
+                "userId": "alice@example.com",
+                "topicName": "projects/my-email-project/topics/inbox-notifications",
+                "labelIds": [
+                    "label_001",
+                    "label_004"
+                ],
+                "labelFilterBehavior": "include"
+            }
+        }
+    }
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8012/repos/octocat/hello-wrold/environments/some
+  name/deployment-branch-policies/2
+method: DELETE
+headers:
+  Authorization: Bearer auth_bypass
+order: 5000

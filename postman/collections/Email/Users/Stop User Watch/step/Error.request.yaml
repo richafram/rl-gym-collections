@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8004/step
+method: POST
+headers:
+  x-database-id: "{{email_db}}"
+  Authorization: "{{email_auth}}"
+body:
+  type: json
+  content: |-
+    {
+        "action_type": "ToolCallAction",
+        "tool_name": "stop_user_watch",
+        "arguments":{
+           "userId":"alicea@example.com"
+        }
+    }
+order: 2000

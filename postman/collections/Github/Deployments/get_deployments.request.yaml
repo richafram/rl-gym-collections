@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://localhost:8012/repos/octocat/hello-world/deployments/123
+method: GET
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: text
+  content: |-
+    {
+      "ref": "sdsd",
+      "task": "deploy",
+      "auto_merge": true,
+      "required_contexts": [
+        ""
+      ],
+      "payload": null,
+      "environment": "production",
+      "description": "",
+      "transient_environment": false,
+      "production_environment": null
+    }
+order: 3000

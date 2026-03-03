@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:8012/repos/octocat/hello-world/deployments?sha=akjdbkajbdkajbskadsdsds&ref=adadsad&task=deploy&environment=staging
+method: GET
+headers:
+  Authorization: Bearer auth_bypass
+queryParams:
+  sha: akjdbkajbdkajbskadsdsds
+  ref: adadsad
+  task: deploy
+  environment: staging
+order: 1000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://localhost:8007/api/v1/files
+method: GET
+headers:
+  x-database-id: db_1769686903512_dkg8dxsj0
+  x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMUpCUU0zSzhUR0haWDlSTlZRTTVZMlA3VyIsImVtYWlsIjoiam9obi5zbWl0aEBjb21wYW55LmNvbSIsIm5hbWUiOiJKb2huIFNtaXRoIiwiaWF0IjoxNzA1MzI0NjAwLCJleHAiOjE3MzY4NjA2MDB9.8K2vQx9mN7pL3sR6tY1uI4oP5aE8wC2bV9nM6xZ3kS
+body:
+  type: json
+  content: >-
+    {
+      "corpora": "drive",
+      "driveId": "01JBQM3K8TGHZX9RNVQM5Y2P8B",
+      "pageSize": 100,
+      "q": "trashed = false and createdTime <= '2025-05-25T00:00:00Z' and mimeType != 'application/vnd.google-apps.folder'"
+    }
+order: 1000

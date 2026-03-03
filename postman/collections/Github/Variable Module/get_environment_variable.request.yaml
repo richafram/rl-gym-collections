@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8012/repos/github/docs/environments/adakjd/variables/anothe
+method: GET
+headers:
+  Authorization: Bearer auth_bypass
+order: 7000

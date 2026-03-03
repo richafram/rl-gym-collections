@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8012/repos/github/docs/environments/somename/variables/another
+method: DELETE
+headers:
+  Authorization: Bearer auth_bypass
+order: 9000

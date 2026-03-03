@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8012/repos/octocat/hello-world/environments/some
+  name/deployment-branch-policies/0
+method: PUT
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: text
+  content: |-
+    {
+        "name":"somename"
+    }
+order: 4000

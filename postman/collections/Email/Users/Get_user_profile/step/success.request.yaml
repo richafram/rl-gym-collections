@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:8004/mcp
+method: POST
+headers:
+  x-database-id: "{{email_db}}"
+  Authorization: "{{email_auth}}"
+body:
+  type: text
+  content: |-
+    {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+          "name": "get_user_profile",
+          "arguments": {
+            "userId":"alice@example.com"
+          }
+      }
+    }
+order: 1000

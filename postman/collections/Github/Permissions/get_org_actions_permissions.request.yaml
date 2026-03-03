@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8012/orgs/github/actions/permissions
+method: GET
+headers:
+  Authorization: Bearer github_pat_66DDEEFF001122334455667788AABBCCDDEEFF00
+order: 1000

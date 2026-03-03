@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:8012/repos/{owner}/{repo}/environments/{environment_name}/variables
+method: POST
+headers:
+  Authorization: Bearer auth_bypass
+body:
+  type: json
+  content: '{"name":"as", "value":"awesome"}'
+order: 6000

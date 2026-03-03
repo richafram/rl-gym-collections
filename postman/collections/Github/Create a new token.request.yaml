@@ -1,0 +1,31 @@
+$kind: http-request
+url: http://localhost:8012/api/users/1/access-tokens
+method: POST
+headers:
+  Content-Type: application/json
+  x-database-id: db_1760704737022_rlbdpx82b
+body:
+  type: json
+  content: |-
+    {
+        "user_id": 1,
+        "access_token": "ghp_new_token_1234567890xgy7654edfgyu76trfgccc",
+        "token_class": "classic",
+        "scope": "repo",
+        "scopes": ["repo"],
+
+      "repository_permissions": {
+        "administration": "admin",
+        "contents": "admin",
+        "metadata": "read"
+      },
+      "account_permissions": {
+        "profile": "read",
+        "members": "admin"
+      },
+      "organization_permissions": {
+        "administration": "write"
+      },
+        "note": "New test token by richard "
+      }
+order: 19000
